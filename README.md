@@ -1,103 +1,107 @@
-# 🫁 Pneumonia Detector AI
+# 🫁 PulmoAI
 
-An AI-powered deep learning model that detects pneumonia from chest X-ray images using a Convolutional Neural Network (CNN). This project was developed as part of the Inspirit AI Scholars program to demonstrate how artificial intelligence can assist in medical image classification.
+An AI-powered web application that classifies chest X-ray images into **Healthy, Pneumonia, COVID-19, or Tuberculosis** using a deep learning model built with TensorFlow.
 
-> 🚀 Built with TensorFlow and Python
+## 🌐 Live Demo
+
+🚀 **Try PulmoAI here:**
+
+**https://disease-classifier--aidennq29.replit.app/**
+
+Upload a chest X-ray image and receive an AI prediction in seconds.
 
 ---
 
 ## 📖 Overview
 
-Pneumonia is a serious lung infection that can be difficult to diagnose quickly. This project uses a Convolutional Neural Network (CNN) trained on thousands of chest X-ray images to classify whether a patient has pneumonia or a normal chest X-ray.
+PulmoAI is a medical image classification project that demonstrates how deep learning can assist in identifying lung diseases from chest X-rays.
 
-While this model is **not intended for medical diagnosis**, it demonstrates how AI can support healthcare professionals by providing rapid image analysis.
+The model analyzes uploaded X-ray images and predicts one of four classes:
+
+- 🟢 Healthy
+- 🫁 Pneumonia
+- 🦠 COVID-19
+- 🔬 Tuberculosis
+
+This project was created for educational purposes to explore the application of artificial intelligence in healthcare.
 
 ---
 
 ## ✨ Features
 
-- 🩻 Detects pneumonia from chest X-ray images
-- 🧠 Deep learning model built with TensorFlow/Keras
-- 📊 Training and validation accuracy tracking
-- 📈 Loss and accuracy visualization
-- 🔍 Binary image classification
-- 💻 Easy-to-run Python project
+- Upload chest X-ray images
+- AI-powered disease classification
+- Four-class prediction
+- Fast web interface
+- TensorFlow deep learning model
+- Sample X-ray dataset included
+- Easy deployment
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 - Python
-- TensorFlow
-- Keras
+- TensorFlow / Keras
 - NumPy
-- Matplotlib
-- Google Colab / Jupyter Notebook
+- Pillow (PIL)
+- Replit
+- HTML / CSS / JavaScript (frontend)
 
 ---
 
-## 📊 Model Performance
+## 🧠 AI Model
 
-The model was trained for **40 epochs** using a labeled chest X-ray dataset.
-
-**Final Results**
-- ✅ Training Accuracy: **~93%**
-- ✅ Validation Accuracy: **~90%**
-- 📉 Validation Loss: **~0.27**
-
-These results show the model generalizes well while maintaining high classification accuracy.
-
----
-
-## 🧠 How It Works
-
-1. Load and preprocess chest X-ray images.
-2. Resize and normalize images.
-3. Train a Convolutional Neural Network (CNN).
-4. Validate the model on unseen images.
-5. Predict whether an X-ray is:
-   - Normal
-   - Pneumonia
-
----
-
-## 📁 Project Structure
+The project uses a trained Convolutional Neural Network (CNN) saved as:
 
 ```
-├── dataset/
-├── model/
-├── training.ipynb
+cnn_model_lung_detection.keras
+```
+
+Class labels are stored in:
+
+```
+class_names.json
+```
+
+The model predicts one of four lung conditions from an uploaded chest X-ray image.
+
+---
+
+## 📂 Project Structure
+
+```
+PulmoAI/
+│
+├── cnn_model_lung_detection.keras
+├── class_names.json
 ├── requirements.txt
-├── README.md
-└── saved_model/
+├── sample_images/
+│   ├── healthy_*.png
+│   ├── pneumonia_*.png
+│   ├── covid_*.png
+│   └── tuberculosis_*.png
+└── README.md
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-### Clone the repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/pneumonia-detector.git
-cd pneumonia-detector
+git clone https://github.com/noob3459/pulmoai.git
+cd pulmoai
 ```
 
-### Install dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the notebook
-
-Open:
-
-```
-training.ipynb
-```
-
-or run your Python script to begin training.
+Run the application and open it in your browser.
 
 ---
 
@@ -105,38 +109,35 @@ or run your Python script to begin training.
 
 Add screenshots here:
 
-- Training Accuracy Graph
-- Validation Accuracy Graph
-- Loss Graph
-- Example Predictions
+- 🏠 Home page
+- 📤 Image upload
+- 🩻 AI prediction results
+- 📊 Example classifications
 
 ---
 
-## ⚠ Disclaimer
+## ⚠️ Disclaimer
 
-This project was created for educational and research purposes during the Inspirit AI Scholars program. It is **not** a medical device and should never replace professional medical diagnosis or treatment.
+PulmoAI is an educational project and is **not intended to diagnose, treat, or replace professional medical advice**. Predictions should never be used as a substitute for evaluation by qualified healthcare professionals.
 
 ---
 
-## 🙏 Credits
+## 👨‍💻 Author
 
-Developed by **Aidenn** as part of the **Inspirit AI Scholars Program**.
+**Aidenn**
 
-Special thanks to:
-- Inspirit AI
-- TensorFlow
-- Keras
-- The open-source medical imaging community
+Built as an AI healthcare project demonstrating computer vision and deep learning for medical image classification.
 
 ---
 
 ## ⭐ Future Improvements
 
-- Improve model accuracy with transfer learning
-- Build a web application for predictions
-- Support additional lung diseases
-- Deploy using Streamlit or Flask
-- Add explainability using Grad-CAM
+- Improve classification accuracy
+- Confidence scores
+- Grad-CAM visualizations
+- Mobile-friendly interface
+- Additional lung disease support
+- Larger training dataset
 
 ---
 
