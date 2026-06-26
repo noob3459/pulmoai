@@ -120,7 +120,7 @@ This project was created for educational and research purposes during the Inspir
 
 ## 🙏 Credits
 
-Developed by **Aidenn Quintero** as part of the **Inspirit AI Scholars Program**.
+Developed by **Aidenn** as part of the **Inspirit AI Scholars Program**.
 
 Special thanks to:
 - Inspirit AI
