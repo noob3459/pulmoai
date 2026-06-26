@@ -4,7 +4,7 @@ An AI-powered web application that classifies chest X-ray images into **Healthy,
 
 ## 🌐 Live Demo
 
-🚀 **Try PulmoAI here:**
+🚀 **Try PulmoAI here without installing anything:**
 
 **https://disease-classifier--aidennq29.replit.app/**
 
@@ -83,25 +83,6 @@ PulmoAI/
 │   └── tuberculosis_*.png
 └── README.md
 ```
-
----
-
-## 🚀 Getting Started
-
-Clone the repository:
-
-```bash
-git clone https://github.com/noob3459/pulmoai.git
-cd pulmoai
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the application and open it in your browser.
 
 ---
 
